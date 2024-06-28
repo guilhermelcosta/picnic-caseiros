@@ -1,0 +1,330 @@
+// Write (or import) your styles here
+// componetes
+
+// cores
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+$primaria_1: #EC6D65;
+$primaria_2: #FFE6E5;
+$primaria_3: #C13A00;
+
+$secundaria_1: #CDE4D3;
+$secundaria_2: #058A38;
+
+$gray_1: #474747;
+$gray_2: #FFE6E533;
+$gray_3: #00000059;
+$gray_4: #FFF7F6;
+
+$size_2: 2px;
+$size_4: 4px;
+$size_5: 5px;
+$size_10: 10px;
+$size_15: 15px;
+$size_20: 20px;
+$size_25: 25px;
+$size_30: 30px;
+$size_35: 35px;
+$size_40: 40px;
+$size_45: 45px;
+$size_50: 50px;
+$size_55: 55px;
+$size_60: 60px;
+$size_65: 65px;
+$size_70: 70px;
+$size_75: 75px;
+$size_80: 80px;
+$size_85: 85px;
+$size_90: 90px;
+$size_95: 95px;
+$size_100: 100px;
+
+// mixin para fontes
+// T-fonte = tamanho fonte
+@mixin T-fonte ($font){
+    font-size: $font;
+}
+
+// mixin para bordas arredondadas
+@mixin borda ($tamanho){
+    border-radius: $tamanho;
+}
+// ex.: @include borda($size_2);
+
+// mixin para botoes
+@mixin botoes ($cor-fundo, $cor-texto, $tamanho, $tamanho-fonte){
+    width: $tamanho;
+    height: $tamanho;
+    background-color: $cor-fundo;
+    color: $cor-texto;
+    font-size: $tamanho-fonte;
+}
+// ex.: @include($primaria_1, $gray_1, $size_20, $size_10);
+
+
+*{
+      font-family: "Laila", serif;
+      font-weight: 600;
+      font-style: bold;
+    
+}
+
+body {
+    background-color: #FFF7F6;
+}
+
+// barra lateral - menu
+
+.sidebar{
+    background-color: #FFF7F6;
+    color: #474747;
+    width: 275.297px;
+    border-right: 1px solid #c13a004f;
+    padding-right: 0px;
+}
+.app-body .sidebar{
+    width: 275.297px;
+    order: -1;
+}
+
+.sidebar .sidebar-nav{
+    position: relative;
+    flex: 1;
+    width: max-content;
+}
+
+.sidebar .nav-link.active .nav-icon {
+    color: white;
+    fill: white;
+}
+
+.bg-bulk {
+    background: #058a3857;
+}
+
+.bg-bulk-info {
+    background: #058a3857;
+}
+
+// barra lateral - menu ativado
+.sidebar .nav-link.active{
+    background-color: $primaria_3;
+    color: $gray_4;
+    filter: drop-shadow(2px 2px 5px $gray_1);
+    fill: white;
+}
+
+.sidebar .nav{
+    width: max-content;
+}
+.sidebar .nav-item{
+    font-size: large;
+    font-family: "Laila", serif;
+    font-size: large;
+
+}
+.sidebar .nav-item:hover{
+    font-size: large;
+    font-family: "Laila", serif;
+    font-size: large;
+    filter: drop-shadow(2px 2px 5px $gray_1);
+    .nav-icon{
+        color: white;
+        fill: white;
+    }
+}
+
+
+.sidebar .nav-link{
+    color: #474747;
+    text-decoration: solid;
+    font-weight: 600;
+    text-align: left;
+}
+
+.sidebar .nav-link .nav-icon {
+    display: inline-block;
+    width: 30px;
+    margin-left: 16px;
+    font-size: 0.875rem;
+    color: #73818f;
+    text-align: left;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.sidebar .nav-title {
+    padding: 0.75rem 1rem;
+    font-size: 80%;
+    font-weight: 700;
+    color: $gray_1;
+    text-transform: uppercase;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.table-listing td:last-of-type {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+// barra lateral - titulos da barra - menu
+.nav-title{
+    color: $gray_3;
+    @include T-fonte($size_15);
+}
+
+//barra lateral - itens da barra - menu
+.nav-item{
+    color: $gray_1;
+}
+
+@media (min-width: 992px) {
+    .sidebar-fixed .sidebar {
+        position: fixed;
+        z-index: 1019;
+        width: auto;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 992px) {
+    html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+        margin-left: 280px;
+        width: auto;
+    }
+}
+
+// exibição (body)
+
+.main .container-fluid {
+    padding: 0 30px;
+    margin-right: 16px;
+    margin-left: 16px;
+    width: auto;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #c13a004f;
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: white;
+    color: #c13a00;
+    font-weight: 600;
+    padding: 1.25rem;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.btn-primary, .btn-info {
+    background-color: $secundaria_2;
+    border-color: $secundaria_2;
+    filter: drop-shadow(1px 1px 1px $gray_3);
+    border-radius: 5px;
+
+}
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+
+.form-control {
+    border: 1px solid #b9c8de;
+    border-radius: 0;
+    padding-right: 2.2rem !important;
+    background-repeat: no-repeat;
+    background-position: center right 0.52344rem;
+    background-size: 1.04688rem 1.04688rem;
+    border-radius: 5px;
+}
+
+
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+.table th, .table td {
+    max-width: 200px;
+    text-align: center;
+}
+
+.table-listing thead a {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+}
+
+.table {
+    width: auto;
+    margin-bottom: 1rem;
+    color: #23282c;
+}
+
+.table table table-hover .table-listing {
+    width: auto;
+    margin-bottom: 1rem;
+    color: #23282c;
+    background-color: #058a3856;
+}
+
+.active {
+        color: #058A38;
+}
+
+.table-listing thead tr {
+    margin: 10px;
+}
+
+[type=checkbox]:not(:checked) + label:after, [type=checkbox]:checked + label:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $secundaria_2;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+    color: $secundaria_2;
+    transition: all 0.2s;
+}
+
+@media (min-width: 992px) {
+    html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+        margin-left: 280px;
+    }
+}
+
+//header
+.app-header.navbar {
+    border-bottom: 1px solid #D6DEE3;
+    background-color: $primaria_3;
+}
+
+.logo-header{
+    width: max-content;
+    color: $primaria_2;
+}

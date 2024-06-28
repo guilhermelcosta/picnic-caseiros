@@ -1,0 +1,36 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: 
+authors:
+  - family-names: Douglas
+    given-names: Viana Fernandes
+  - family-names: Filipe
+    given-names: Iannarelli Caldeira
+  - family-names: Guilherme 
+    given-names: Lage da Costa
+  - family-names: Michelli
+    given-names: Cristina Silva Freitas
+  - family-names: Vinícius Levi
+    given-names: Viana de Oliveira
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Joana Gabriela
+    given-names: Ribeiro de Souza
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Joyce Christina
+    given-names: de Paiva Carvalo
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Soraia
+    given-names: Lúcia da Silva
+keywords:
+  - Picnic
+  - Caseiros
+  - Gestão
+  - Alimentos
+  - Sustentável
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14

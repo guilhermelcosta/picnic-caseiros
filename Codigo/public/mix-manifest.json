@@ -1,0 +1,23 @@
+{
+    "/js/admin.js": "/js/admin.js",
+    "/css/admin.css": "/css/admin.css",
+    "/images/account-manager.svg": "/images/account-manager.svg",
+    "/images/atendimento-ao-cliente.svg": "/images/atendimento-ao-cliente.svg",
+    "/images/bolo.svg": "/images/bolo.svg",
+    "/images/botao-adicionar.svg": "/images/botao-adicionar.svg",
+    "/images/botao-apagar.svg": "/images/botao-apagar.svg",
+    "/images/canal.svg": "/images/canal.svg",
+    "/images/doacao-de-alimentos.svg": "/images/doacao-de-alimentos.svg",
+    "/images/documentos.svg": "/images/documentos.svg",
+    "/images/editar.svg": "/images/editar.svg",
+    "/images/entregador.svg": "/images/entregador.svg",
+    "/images/historico.svg": "/images/historico.svg",
+    "/images/icentivovenda.svg": "/images/icentivovenda.svg",
+    "/images/ingredientes.svg": "/images/ingredientes.svg",
+    "/images/livros-de-contato.svg": "/images/livros-de-contato.svg",
+    "/images/logo-de-moda-feminina-branca.svg": "/images/logo-de-moda-feminina-branca.svg",
+    "/images/picniclogo.svg": "/images/picniclogo.svg",
+    "/images/receita.svg": "/images/receita.svg",
+    "/images/vendor/trumbowyg/dist/ui/icons.svg": "/images/vendor/trumbowyg/dist/ui/icons.svg",
+    "/images/verificacao.svg": "/images/verificacao.svg"
+}
